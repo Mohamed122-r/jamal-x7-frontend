@@ -1,0 +1,1 @@
+# jamal-x7-frontend
