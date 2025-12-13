@@ -1,35 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000,
-    open: true,
-    host: true
-  },
+  root: '.', // تأكد أن الجذر هو المجلد الحالي
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['framer-motion', 'swiper', 'react-hot-toast']
-        }
-      }
-    }
-  },
-  css: {
-    devSourcemap: true
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
-      '@': '/src',
-      '@components': '/src/components',
-      '@assets': '/src/assets',
-      '@styles': '/src/styles',
-      '@utils': '/src/utils'
-    }
-  }
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  server: {
+    port: 3000,
+    open: true,
+  },
 })
