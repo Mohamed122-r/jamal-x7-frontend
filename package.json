@@ -1,35 +1,21 @@
 {
   "name": "jamal-x7",
   "version": "1.0.0",
-  "description": "منصة JAMAL X7 للخدمات الرقمية",
-  "main": "src/js/app.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && vercel --prod",
-    "format": "prettier --write .",
-    "lint": "eslint ."
-  },
-  "keywords": [
-    "digital-services",
-    "web-design",
-    "development",
-    "saudi-arabia"
-  ],
-  "author": "JAMAL X7",
-  "license": "MIT",
-  "devDependencies": {
-    "vite": "^4.0.0",
-    "prettier": "^2.8.0",
-    "eslint": "^8.0.0"
+    "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@lottiefiles/lottie-player": "^2.0.0"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
