@@ -4,14 +4,20 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  root: '.', // تأكد أن الجذر هو المجلد الحالي
+  root: '.',
+  base: './',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html')
+      }
+    }
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   server: {
