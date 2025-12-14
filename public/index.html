@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMAL X7 - منصة الخدمات الرقمية المتكاملة</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="نصمم... نطور... ننجز خدمات رقمية احترافية بجودة عالية وتنفيذ سريع">
+    <meta name="keywords" content="تصميم, تطوير, برمجة, مواقع, شعارات, فيديو, تسويق">
+    <meta name="author" content="JAMAL X7">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lottie Animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/animations.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0A0E1A">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <lottie-player
+                        src="/assets/animations/logo-animation.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                        class="logo-animation">
+                    </lottie-player>
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">JAMAL X7</h1>
+                    <p class="brand-tagline">نصمم... نطور... ننجز</p>
+                </div>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">الرئيسية</a>
+                <a href="#services" class="nav-link" data-section="services">الخدمات</a>
+                <a href="#portfolio" class="nav-link" data-section="portfolio">معرض الأعمال</a>
+                <a href="#pricing" class="nav-link" data-section="pricing">الباقات والأسعار</a>
+                <a href="#about" class="nav-link" data-section="about">من نحن</a>
+                <a href="#contact" class="nav-link" data-section="contact">تواصل معنا</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="https://wa.me/966123456789" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل عبر واتساب
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+            <img src="/assets/images/hero-bg.jpg" alt="خلفية البطل" class="hero-bg-image">
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    متاح الآن للعمل على مشاريعك
+                </div>
+                
+                <h1 class="hero-title">
+                    مرحباً بك في 
+                    <span class="highlight">JAMAL X7</span>
+                </h1>
+                
+                <p class="hero-description">
+                    نقدم حلولاً رقمية شاملة تبدأ من التصميم وتنتهي بالتطوير والتسليم، 
+                    مع الحفاظ على الجودة العالية والسرعة في التنفيذ.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="250">0</div>
+                        <div class="stat-label">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="180">0</div>
+                        <div class="stat-label">عميل راضٍ</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4.9">0</div>
+                        <div class="stat-label">تقييم العملاء</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i>
+                        ابدأ مشروعك الآن
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline btn-lg">
+                        <i class="fas fa-eye"></i>
+                        شاهد أعمالنا
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <lottie-player
+                    src="/assets/animations/hero-animation.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay
+                    class="hero-animation">
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا المتكاملة</h2>
+                <p class="section-description">
+                    نقدم مجموعة واسعة من الخدمات الرقمية المصممة خصيصاً لاحتياجاتك
+                </p>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- سيتم ملؤه بـ JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">معرض أعمالنا</h2>
+                <p class="section-description">
+                    نماذج من المشاريع التي أنجزناها بنجاح
+                </p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع إلكترونية</button>
+                <button class="filter-btn" data-filter="design">تصميم</button>
+                <button class="filter-btn" data-filter="video">فيديو</button>
+                <button class="filter-btn" data-filter="marketing">تسويق</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- سيتم ملؤه بـ JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">باقاتنا وأسعارنا</h2>
+                <p class="section-description">
+                    اختر الباقة المناسبة لمشروعك مع إمكانية التخصيص
+                </p>
+            </div>
+            
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- سيتم ملؤه بـ JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">من نحن</h2>
+                    <p class="about-description">
+                        نحن فريق JAMAL X7، مجموعة من المحترفين المتخصصين في تقديم 
+                        حلول رقمية شاملة ومتكاملة. نتميز بالدقة في العمل والالتزام 
+                        بمواعيد التسليم والحرص على تحقيق رضا عملائنا.
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h3>تنفيذ سريع</h3>
+                                <p>نسلم مشاريعنا في الوقت المتفق عليه</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h3>جودة مضمونة</h3>
+                                <p>نضمن جودة عالية في كل مشروع</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h3>دعم فني مستمر</h3>
+                                <p>ندعمك حتى بعد انتهاء المشروع</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="/assets/images/about-team.jpg" alt="فريق العمل">
+                    <div class="experience-badge">
+                        <div class="experience-years">5+</div>
+                        <div class="experience-text">سنوات خبرة</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="section-description">
+                                  <p class="section-description">
+                    نحن هنا لمساعدتك! تواصل معنا للحصول على عرض سعر أو استشارة مجانية
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="أدخل اسمك الكامل">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف *</label>
+                                <input type="tel" id="phone" name="phone" required 
+                                       placeholder="+966 XX XXX XXXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">نوع الخدمة المطلوبة *</label>
+                            <select id="service" name="service" required>
+                                <option value="">اختر الخدمة</option>
+                                <option value="logo">تصميم الشعار</option>
+                                <option value="website">تصميم وبناء المواقع</option>
+                                <option value="video">تصميم وتحرير الفيديو</option>
+                                <option value="programming">البرمجة والتطوير</option>
+                                <option value="content">كتابة وترجمة المحتوى</option>
+                                <option value="audio">الصوتيات والتعليق الصوتي</option>
+                                <option value="custom">خدمات خاصة حسب الطلب</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">الميزانية المتوقعة</label>
+                                <select id="budget" name="budget">
+                                    <option value="">اختر نطاق السعر</option>
+                                    <option value="500-1000">500 - 1,000 ريال</option>
+                                    <option value="1000-3000">1,000 - 3,000 ريال</option>
+                                    <option value="3000-5000">3,000 - 5,000 ريال</option>
+                                    <option value="5000+">أكثر من 5,000 ريال</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">الجدول الزمني</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">اختر المدة</option>
+                                    <option value="urgent">عاجل (أقل من أسبوع)</option>
+                                    <option value="1-2">1-2 أسبوع</option>
+                                    <option value="2-4">2-4 أسابيع</option>
+                                    <option value="1+">أكثر من شهر</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">وصف المشروع *</label>
+                            <textarea id="description" name="description" rows="5" 
+                                      placeholder="صف لنا مشروعك بالتفصيل..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الطلب
+                        </button>
+                        
+                        <div class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            سنتواصل معك خلال 24 ساعة عمل
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>واتساب</h3>
+                            <p>+966 12 345 6789</p>
+                            <a href="https://wa.me/966123456789" class="whatsapp-link" target="_blank">
+                                ابدأ محادثة الآن
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@jamalx7.com</p>
+                            <a href="mailto:info@jamalx7.com" class="email-link">
+                                أرسل بريداً إلكترونياً
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>ساعات العمل</h3>
+                            <p>السبت - الخميس</p>
+                            <p>9:00 ص - 6:00 م</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>العنوان</h3>
+                            <p>المملكة العربية السعودية</p>
+                            <p>الرياض، حي الملقا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <lottie-player
+                            src="/assets/animations/logo-animation.json"
+                            background="transparent"
+                            speed="1"
+                            loop
+                            autoplay
+                            style="width: 60px; height: 60px;">
+                        </lottie-player>
+                    </div>
+                    <div>
+                        <h3>JAMAL X7</h3>
+                        <p class="brand-tagline">نصمم... نطور... ننجز</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>روابط سريعة</h4>
+                        <a href="#home">الرئيسية</a>
+                        <a href="#services">الخدمات</a>
+                        <a href="#portfolio">معرض الأعمال</a>
+                        <a href="#pricing">الباقات</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>الخدمات</h4>
+                        <a href="#services">تصميم الشعار</a>
+                        <a href="#services">تصميم المواقع</a>
+                        <a href="#services">تحرير الفيديو</a>
+                        <a href="#services">التسويق الرقمي</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>تواصل معنا</h4>
+                        <a href="https://wa.me/966123456789" target="_blank">
+                            <i class="fab fa-whatsapp"></i> واتساب
+                        </a>
+                        <a href="mailto:info@jamalx7.com">
+                            <i class="fas fa-envelope"></i> البريد الإلكتروني
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>اشترك في النشرة البريدية</h4>
+                    <p>كن أول من يعرف عن العروض الجديدة</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2024 JAMAL X7. جميع الحقوق محفوظة.</p>
+                    <div class="footer-legal">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">الشروط والأحكام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/966123456789" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <lottie-player
+                src="/assets/animations/loading-animation.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/services.js"></script>
+    <script src="/src/js/orders.js"></script>
+    <script src="/src/js/animations.js"></script>
+    <script src="/src/js/api.js"></script>
+    
+    <!-- Initialize App -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all modules
+            initializeApp();
+            initializeServices();
+            initializeAnimations();
+            
+            // Load data
+            loadServices();
+            loadPortfolio();
+            loadPricing();
+            
+            // Setup event listeners
+            setupEventListeners();
+            
+            // Show welcome message
+            setTimeout(() => {
+                showToast('مرحباً بك في JAMAL X7!', 'success');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
