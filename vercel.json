@@ -9,27 +9,16 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/api/:path*",
+      "destination": "https://api.jamalx7.com/:path*"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "https://api.jamalx7.com/$1"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
-  "env": {
-    "NODE_ENV": "production",
-    "API_URL": "https://api.jamalx7.com",
-    "GOOGLE_ANALYTICS_ID": "UA-XXXXXXXXX-X"
-  },
-  "regions": ["dub1"],
-  "public": true,
-  "github": {
-    "enabled": true,
-    "autoJobCancelation": true
-  },
   "headers": [
     {
       "source": "/(.*)",
@@ -51,8 +40,12 @@
           "value": "origin-when-cross-origin"
         },
         {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.gstatic.com https://*.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://*.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://api.jamalx7.com; frame-src 'self' https://*.google.com;"
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
         }
       ]
     },
@@ -72,24 +65,98 @@
           "value": "/"
         }
       ]
+    },
+    {
+      "source": "/(.*).css",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
   "redirects": [
     {
-      "source": "/old-services",
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
       "destination": "/#services",
       "permanent": true
     },
     {
-      "source": "/contact-us",
+      "source": "/portfolio",
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/#pricing",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
       "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/",
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/en",
-      "destination": "/index.html"
-    }
-  ]
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "env": {
+    "NODE_ENV": "production",
+    "API_URL": "https://api.jamalx7.com",
+    "GOOGLE_ANALYTICS_ID": "UA-XXXXXXXXX-X",
+    "RECAPTCHA_SITE_KEY": "your-recaptcha-site-key"
+  },
+  "regions": ["dub1"],
+  "public": true,
+  "github": {
+    "enabled": true,
+    "silent": true,
+    "autoAlias": true
+  }
 }
